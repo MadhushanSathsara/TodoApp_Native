@@ -48,20 +48,23 @@ TodoApp_Native/
      ```bash
       git clone https://github.com/MadhushanSathsara/TodoApp_Native.git
       ```
-    cd TodoApp_Native
+     
+     cd TodoApp_Native
   
   2. Install dependencies
+     
      Copy code
       ```bash
       npm install
       ```
       
   4. Start the Expo development server
+
+     Copy code
       ```bash
-      Copy code
       npx expo start
-      Then scan the QR code using the Expo Go app or run it on an emulator (Android/iOS).
       ```
+      Then scan the QR code using the Expo Go app or run it on an emulator (Android/iOS).
 
 ### 📱 Features
 
@@ -77,7 +80,10 @@ TodoApp_Native/
 
 #### 🧭 Custom tab bar navigation
 
+
 ⚠️ Note: Editing existing tasks is not supported yet — only add, view, delete, and change status.
+
+
 
 ### 🧠 Core Functionality
 
@@ -93,6 +99,7 @@ Task status cycles through:
 
 scss
 Copy code
+
 Pending → In Progress → Done → Pending
 🚀 Future Enhancements
 ✏️ Edit existing tasks
@@ -106,4 +113,5 @@ Pending → In Progress → Done → Pending
 🤝 Author
 
 Developed by Madhushan Sathsara
+
 🔗 GitHub: MadhushanSathsara
