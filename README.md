@@ -38,45 +38,56 @@ TodoApp_Native/
 ├── package.json
 ├── app.json
 └── README.md
-⚙️ Setup Instructions
-1. Clone the repository
-bash
-Copy code
-git clone https://github.com/MadhushanSathsara/TodoApp_Native.git
-cd TodoApp_Native
-2. Install dependencies
-bash
-Copy code
-npm install
-3. Start the Expo development server
-bash
-Copy code
-npx expo start
-Then scan the QR code using the Expo Go app or run it on an emulator (Android/iOS).
+```
 
-📱 Features
-🗓 Calendar-based task organization
+## ⚙️ Setup Instructions
 
-➕ Add and delete tasks easily
+  1. Clone the repository
+  
+     Copy code
+     ```bash
+      git clone https://github.com/MadhushanSathsara/TodoApp_Native.git
+      ```
+    cd TodoApp_Native
+  
+  2. Install dependencies
+     Copy code
+      ```bash
+      npm install
+      ```
+      
+  4. Start the Expo development server
+      ```bash
+      Copy code
+      npx expo start
+      Then scan the QR code using the Expo Go app or run it on an emulator (Android/iOS).
+      ```
 
-🔄 Update task status (Pending → In Progress → Done)
+### 📱 Features
 
-💾 Offline storage using AsyncStorage
+#### 🗓 Calendar-based task organization
 
-🎨 Color-coded task tags
+#### ➕ Add and delete tasks easily
 
-🧭 Custom tab bar navigation
+#### 🔄 Update task status (Pending → In Progress → Done)
+
+#### 💾 Offline storage using AsyncStorage
+
+#### 🎨 Color-coded task tags
+
+#### 🧭 Custom tab bar navigation
 
 ⚠️ Note: Editing existing tasks is not supported yet — only add, view, delete, and change status.
 
-🧠 Core Functionality
-All tasks are stored locally under the key @tasks_storage
+### 🧠 Core Functionality
 
-Tasks include title, description, date, color, and status
+* All tasks are stored locally under the key @tasks_storage
 
-Home screen displays only today’s tasks
+* Tasks include title, description, date, color, and status
 
-Calendar highlights dates that contain tasks
+* Home screen displays only today’s tasks
+
+* Calendar highlights dates that contain tasks
 
 Task status cycles through:
 
@@ -93,8 +104,6 @@ Pending → In Progress → Done → Pending
 🌙 Dark mode support
 
 🤝 Author
+
 Developed by Madhushan Sathsara
-
-📍 Sri Lanka
-
 🔗 GitHub: MadhushanSathsara
