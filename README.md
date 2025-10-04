@@ -44,7 +44,6 @@ TodoApp_Native/
 
   1. Clone the repository
   
-     Copy code
      ```bash
       git clone https://github.com/MadhushanSathsara/TodoApp_Native.git
       ```
@@ -53,14 +52,12 @@ TodoApp_Native/
   
   2. Install dependencies
      
-     Copy code
       ```bash
       npm install
       ```
       
   4. Start the Expo development server
 
-     Copy code
       ```bash
       npx expo start
       ```
@@ -97,8 +94,6 @@ TodoApp_Native/
 
 Task status cycles through:
 
-scss
-Copy code
 
 Pending → In Progress → Done → Pending
 🚀 Future Enhancements
