@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# ✅ TodoApp_Native (React Native Project)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a mobile **to-do list application** developed using **React Native (Expo)**.  
+It allows users to **add, view, and manage tasks** with a simple interface.  
+The app uses a **calendar view** to organize tasks by date and stores all data **locally using AsyncStorage** for offline access.
 
-## Get started
+---
 
-1. Install dependencies
+## 🔧 Technologies Used
 
-   ```bash
-   npm install
-   ```
+- Framework: React Native (Expo)
+- Language: JavaScript / TypeScript
+- Navigation: Expo Router (Tabs)
+- Local Storage: AsyncStorage
+- Calendar: react-native-calendars
+- Date Picker: react-native-modal-datetime-picker
+- Icons: @expo/vector-icons
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 📁 Folder Structure
 
 ```bash
-npm run reset-project
-```
+TodoApp_Native/
+├── app/
+│   ├── _layout.js        ← Tab navigation layout
+│   ├── index.js          ← Home screen (Today's tasks)
+│   ├── todo.js           ← Calendar + Task management screen
+│
+├── components/
+│   ├── TabBar.js         ← Custom bottom tab bar
+│   ├── CalendarView.js   ← Calendar view with marked dates
+│   ├── TaskForm.js       ← Modal form for adding new tasks
+│
+├── assets/
+│   └── homebanner.png    ← Banner image for home screen
+│
+├── package.json
+├── app.json
+└── README.md
+⚙️ Setup Instructions
+1. Clone the repository
+bash
+Copy code
+git clone https://github.com/MadhushanSathsara/TodoApp_Native.git
+cd TodoApp_Native
+2. Install dependencies
+bash
+Copy code
+npm install
+3. Start the Expo development server
+bash
+Copy code
+npx expo start
+Then scan the QR code using the Expo Go app or run it on an emulator (Android/iOS).
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+📱 Features
+🗓 Calendar-based task organization
 
-## Learn more
+➕ Add and delete tasks easily
 
-To learn more about developing your project with Expo, look at the following resources:
+🔄 Update task status (Pending → In Progress → Done)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+💾 Offline storage using AsyncStorage
 
-## Join the community
+🎨 Color-coded task tags
 
-Join our community of developers creating universal apps.
+🧭 Custom tab bar navigation
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+⚠️ Note: Editing existing tasks is not supported yet — only add, view, delete, and change status.
+
+🧠 Core Functionality
+All tasks are stored locally under the key @tasks_storage
+
+Tasks include title, description, date, color, and status
+
+Home screen displays only today’s tasks
+
+Calendar highlights dates that contain tasks
+
+Task status cycles through:
+
+scss
+Copy code
+Pending → In Progress → Done → Pending
+🚀 Future Enhancements
+✏️ Edit existing tasks
+
+🔔 Task reminders / notifications
+
+☁️ Cloud sync (Firebase / Supabase)
+
+🌙 Dark mode support
+
+🤝 Author
+Developed by Madhushan Sathsara
+
+📍 Sri Lanka
+
+🔗 GitHub: MadhushanSathsara
